@@ -1,0 +1,22 @@
+.footer {
+  background-color: #ffffff; /* Dark grey for footer background */
+  color: #ffffff; /* White for text */
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d7c178;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: #827d7d; /* Light grey for subtle copyright text */
+}
+.footer-color {
+  color: black;
+}
