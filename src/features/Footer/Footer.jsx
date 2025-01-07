@@ -1,11 +1,12 @@
 import React from "react";
 import "./Footer.css";
+import Logo from "../../components/Logo";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer-logo">
-        Xpense<span className="footer-color">Haven</span>
+        <Logo />
       </p>
       <p className="footer-copyright">&copy; 2024 XpenseHaven.</p>
     </footer>
