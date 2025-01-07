@@ -16,8 +16,13 @@ const Nav = () => {
         </li>
       </ul>
       <div className="nav-buttons">
-        <button>Signup</button>
-        <button>Login</button>
+        {/* Add Links for Signup and Login */}
+        <Link to="/signup">
+          <button className="nav-button">Signup</button>
+        </Link>
+        <Link to="/login">
+          <button className="nav-button">Login</button>
+        </Link>
       </div>
     </nav>
   );
