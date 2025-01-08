@@ -8,7 +8,7 @@ function Logo() {
     <Link to="/" className="logo-container">
       <img src={logo} alt="Site Logo" />
       <span className="logo-text">
-        <span className="highlight">fye</span>nance
+        <span className="highlight">xpense</span>haven
       </span>
     </Link>
   );
