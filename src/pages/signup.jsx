@@ -2,6 +2,7 @@ import React from "react";
 import "./auth.css"; // Shared styles for Login and Signup
 import { Link } from "react-router-dom";
 import Logo from "../components/Logo";
+import googleIcon from "../assets/images/google-icon.png";
 
 const Signup = () => (
   <div className="auth-container">
@@ -27,11 +28,7 @@ const Signup = () => (
         <span>or</span>
       </div>
       <button type="button" className="auth-button google">
-        <img
-          src="/assets/images/google-icon.png"
-          alt="Google"
-          className="google-icon"
-        />
+        <img src={googleIcon} alt="Google" className="google-icon" />
         Sign up with Google
       </button>
     </form>
