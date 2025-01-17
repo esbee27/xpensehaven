@@ -1,0 +1,169 @@
+/* Budget Page Styles */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
+
+/* Body background */
+.budget-page {
+  background-color: #f9fafb;
+  padding: 20px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  overflow: visible;
+}
+
+/* Header Section */
+.budget-page .budget-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+/* Budget Form */
+.budget-form-container {
+  position: absolute;
+  top: 120%;
+  right: 20px;
+  max-width: 400px;
+  width: 100%;
+  max-height: 90vh;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Form Styling */
+.budget-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.budget-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.budget-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.budget-form button {
+  background-color: #d9d9d9;
+  color: black;
+  font-family: "Fredoka", sans-serif;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.budget-form button:hover {
+  background-color: #adebb3;
+}
+
+/* Time Period Buttons */
+.budget-page .time-periods button {
+  background: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Fredoka", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.budget-page .time-periods button.active {
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.budget-page .add-budget-btn {
+  background-color: #d9d9d9;
+  color: black;
+  font-family: "Fredoka", sans-serif;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.budget-page .add-budget-btn:hover {
+  background-color: #adebb3;
+}
+
+/* Table Styling */
+.budget-page .budget-table table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.budget-page .budget-table th,
+.budget-page .budget-table td {
+  padding: 15px 10px;
+}
+
+.budget-page .budget-table th {
+  border-bottom: 2px solid #d9d9d9;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+.budget-page .budget-table tr:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.budget-page .budget-table tr {
+  height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.budget-page .budget-table td {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Styling specific table columns */
+.budget-page .budget-table td:nth-child(2) {
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.budget-page .budget-table td:nth-child(3) {
+  font-weight: bold;
+  color: #333;
+}
+
+.budget-page .budget-table td:nth-child(4),
+.budget-page .budget-table td:nth-child(5) {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Action buttons styling */
