@@ -4,14 +4,23 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi"; // Import icons // 
 import Logo from "../../../components/Logo"; //  relative path
 import { useCurrency } from "../../../context/currencyContext"; // Use the Currency context
 import "./Settings.css"; // Import styles
+import { useAuth } from "../../../context/AuthContext"; // Import useAuth
 
 function SettingsPage() {
+  const { user, updateUser } = useAuth(); // Access user and updateUser from context
+  const [username, setUsername] = useState(user?.name || "");
+  const [email, setEmail] = useState(user?.email || "");
   const location = useLocation(); // Get current location
   const navigate = useNavigate(); // For manual navigation
   const [activeTab, setActiveTab] = useState("general"); // Default tab is 'general'
   const [isCollapsed, setIsCollapsed] = useState(false); // Track collapse state// Collapse state
   const { currency, changeCurrency } = useCurrency(); // Access the current currency and the function to change it
 
+  const handleProfileUpdate = () => {
+    // Update user profile dynamically
+    const updatedData = { name: username, email };
+    updateUser(updatedData); // Update the context with new data
+  };
   // Parse the query parameter to set the active tab
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
@@ -63,6 +72,7 @@ function SettingsPage() {
           >
             Profile
           </button>
+
           <button
             className={activeTab === "financial-data" ? "active" : ""}
             onClick={() => handleTabSwitch("financial-data")}
@@ -88,14 +98,44 @@ function SettingsPage() {
                 </select>
               </div>
             )}
-            {activeTab === "profile" && <div>Profile Settings</div>}
+            {activeTab === "profile" && (
+              <div className="profile-content">
+                <h3>Profile Settings</h3>
+                <div className="profile-photo">
+                  <div className="photo-circle"></div>
+                  <button className="change-photo-btn">Change Photo</button>
+                </div>
+                <div className="form-group">
+                  <label>Username</label>
+                  <input
+                    type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <button
+                  className="save-changes-btn"
+                  onClick={handleProfileUpdate}
+                >
+                  Save Changes
+                </button>
+              </div>
+            )}
             {activeTab === "financial-data" && (
               <div className="financial-tab-content">
                 <h3>Account</h3>
                 <hr className="underline" />
                 <p>
                   Automate account balance and transaction updates by linking
-                  your account with fyenance.
+                  your account with xpensehaven.
                 </p>
                 <button className="link-bank-btn">Link Bank Account</button>
 
