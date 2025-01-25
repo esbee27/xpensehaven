@@ -27,6 +27,7 @@
   font-size: 24px;
   margin-bottom: 20px;
   color: #3f3e39;
+  padding-top: 50px;
 }
 
 /* Form */
@@ -36,11 +37,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 20px;
 }
 
 /* Input */
 .auth-input {
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
@@ -51,7 +53,6 @@
 .auth-button {
   padding: 10px 15px;
   font-size: 16px;
-  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -60,17 +61,25 @@
 
 .auth-button.primary {
   background-color: #d7c178;
+  color: #000000;
+}
+.auth-button.primary:hover {
+  background-color: #efdc9d;
   color: #ffffff;
 }
 
 .auth-button.google {
-  background-color: #ffffff;
-  color: #3f3e39;
+  background-color: #d7c178;
+  color: #000;
   border: 1px solid #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+.auth-button.google:hover {
+  background-color: #efdc9d;
+  color: white;
 }
 
 /* Google Icon */
@@ -96,15 +105,28 @@
 
 /* Footer */
 .auth-footer {
-  margin-top: 10px;
+  text-align: center;
+  color: #9c9898;
+  /* margin-top: 10px; */
   font-size: 14px;
 }
 
 .auth-footer a {
-  color: #4ecc5a;
+  color: #9c9898;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .auth-footer a:hover {
   text-decoration: underline;
+}
+/* Wrapper for centering forms with extra spacing */
+.auth-wrapper {
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  padding: 20px;
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
 }
