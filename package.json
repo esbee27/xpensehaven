@@ -14,7 +14,8 @@
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.28.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "webpack": "^5.97.1"
   },
   "scripts": {
     "start": "react-scripts start",
