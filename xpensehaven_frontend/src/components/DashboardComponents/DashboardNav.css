@@ -1,0 +1,126 @@
+/* General Navbar Styling */
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a202c; /* Dark Navy */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: "Fredoka", sans-serif;
+}
+
+.dash-nav {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.dash-nav a {
+  text-decoration: none;
+  color: #edf2f7; /* Soft Cool White */
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dash-nav li a.active {
+  background-color: #81e6d9; /* Mint Teal */
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: none;
+  color: #1a202c; /* Dark Navy */
+  font-weight: bold;
+}
+
+.dash-nav li a:hover {
+  background-color: #38b2ac; /* Teal */
+  color: #edf2f7; /* Soft Cool White */
+}
+
+/* Icon Styling */
+.icons {
+  display: flex; /* Ensures child elements are side-by-side */
+  align-items: center; /* Vertically aligns icons */
+  gap: 10px; /* Adjust spacing between the icons */
+}
+
+.icons svg {
+  color: #cbd5e0; /* Light Slate */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icons svg:hover {
+  color: #81e6d9; /* Mint Teal */
+}
+
+/* Profile Section */
+.profile-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #2d3748; /* Charcoal Blue */
+  border: 1px solid #cbd5e0; /* Light Slate */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  z-index: 1000;
+  color: #edf2f7; /* Soft Cool White */
+  font-size: 14px;
+}
+
+.profile-menu p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.profile-menu p:hover {
+  color: #81e6d9; /* Mint Teal */
+}
+
+.profile-menu hr {
+  border: none;
+  border-top: 1px solid #cbd5e0; /* Light Slate */
+  margin: 8px 0;
+}
+
+.profile-icon img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.profile-pic-large {
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .dashboard-nav {
+    flex-direction: column;
+  }
+
+  .dash-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dash-nav a {
+    font-size: 16px;
+  }
+}
