@@ -1,0 +1,263 @@
+/* General Settings Page Styles */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
+
+.settings-page {
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Header Section */
+.settings-header {
+  display: flex;
+  color: #cbd5e0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #1a202c;
+  padding: 5px;
+  border-bottom: 1px solid #cbd5e0;
+}
+
+.settings-header h2 {
+  padding-left: 15px;
+  font-weight: 500;
+}
+
+/* Collapse Button */
+.collapse-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Main Section (Side Panel + Divider + Content) */
+.settings-main {
+  display: flex;
+  width: 100%;
+  background-color: #e2e8f0;
+  height: calc(100vh - 60px);
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+/* Side Panel */
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+}
+
+.side-panel button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: left;
+}
+
+.settings-main.collapsed {
+  width: fit-content;
+  transition: width 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.settings-main.collapsed .divider,
+.settings-main.collapsed .settings-content {
+  display: none;
+}
+
+.side-panel button.active {
+  background-color: #38b2ac;
+  color: #edf2f7;
+}
+
+.side-panel button:hover {
+  background-color: #38b2ac;
+  color: #edf2f7;
+}
+
+/* Divider */
+.divider {
+  width: 2px;
+  background-color: #4a5568;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Content Area */
+.settings-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Financial Tab Content */
+.financial-tab-content {
+  margin-top: 20px;
+}
+
+.settings-page button {
+  font-family: inherit;
+  margin: 16px;
+  font-size: 16px;
+}
+
+.transaction-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.link-bank-btn {
+  margin-top: 15px;
+}
+
+.link-bank-btn,
+.download-btn {
+  background-color: #38b2ac;
+  color: #edf2f7;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.upload-btn {
+  background-color: #edf2f7;
+  color: #2d3748;
+  padding: 10px 15px;
+  border: 1px solid #4a5568;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.underline {
+  border: 0;
+  border-top: 2px solid #cbd5e0;
+  margin: 10px 0;
+}
+
+/* Profile settings */
+.profile-content {
+  max-width: 300px;
+  margin: 0;
+  padding: 20px;
+  font-family: "Fredoka", sans-serif;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #cbd5e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.change-photo-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #4a5568;
+  background-color: #edf2f7;
+  border: 1px solid #4a5568;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-photo-btn:hover {
+  background-color: #38b2ac;
+  color: #edf2f7;
+}
+
+.change-photo-btn:active {
+  background-color: #81e6d9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #2d3748;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.save-changes-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #4a5568;
+  background-color: #edf2f7;
+  border: 1px solid #4a5568;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-changes-btn:hover {
+  background-color: #38b2ac;
+  color: #edf2f7;
+}
+
+.save-changes-btn:active {
+  background-color: #81e6d9;
+}
+
+.profile-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.no-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #718096;
+  border: 2px dashed #cbd5e0;
+}
+
+.photo-input {
+  margin-top: 1rem;
+}
