@@ -1,18 +1,18 @@
 .action-links {
-  display: flex; /* Ensures the container behaves as a flex container */
-  flex-direction: column; /* Aligns items vertically */
-  gap: 15px; /* Adds spacing between items */
-  margin-top: 20px; /* Space above the action links */
-  align-items: center; /* Ensures the links are centered horizontally */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .action-text {
   font-size: 1.3rem;
-  background-color: #adebb3;
+  background-color: #38b2ac; /* Teal */
   cursor: pointer;
   margin: 20px 0;
   padding: 8px 12px;
-  border: 1px solid #ddd7d7;
+  border: 1px solid #cbd5e0; /* Light Slate */
   border-radius: 5px;
   text-align: center;
   width: 200px;
@@ -25,13 +25,13 @@
 
 .link-bank {
   font-size: 1.3rem;
-  color: #666;
+  color: #4a5568; /* Slate Grey */
   margin-top: 20px;
   padding: 10px;
 }
 
 .settings-link {
-  color: #3f3e39; /* Darker shade for the settings link */
+  color: #3e3c39; /* Darker shade for the settings link */
   cursor: pointer;
   font-weight: 500;
 }
@@ -42,9 +42,9 @@
 
 .placeholder,
 .link-bank {
-  line-height: 1.5; /* Set same line-height for both */
+  line-height: 1.5;
 }
 
 .link-bank {
-  margin-top: -5px; /* Adjust as needed to align */
+  margin-top: -5px;
 }

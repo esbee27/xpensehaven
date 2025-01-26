@@ -8,7 +8,7 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: #edf2f7; /* Soft Cool White */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -33,16 +33,26 @@
 
 .card p {
   font-size: 1rem;
-  color: #7a7a7a;
+  color: #4a5568; /* Slate Grey */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .total-balance-card {
-  background: linear-gradient(to right, #3f3e39, #adebb3);
-  color: white;
+  background: linear-gradient(
+    to right,
+    #1a202c,
+    #38b2ac
+  ); /* Dark Navy to Teal */
+  color: #edf2f7; /* Soft Cool White */
 }
 
 .total-balance-card .balance-placeholder {
-  color: #ffffff;
+  color: #edf2f7; /* Soft Cool White */
   font-size: 3rem;
   font-weight: 500;
   padding-left: 10px;
@@ -61,15 +71,15 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: bold;
-  border-radius: 7px 8px 8px; /* Rounded top corners */
+  border-radius: 7px 7px 0 0; /* Rounded top corners */
 }
 
 .header.active {
-  background-color: #f5f5f5; /* Ash color for active header */
+  background-color: #e2e8f0; /* Cool Grey */
 }
 
 .header {
-  background-color: #d9d9d9; /* Default grey color for inactive header */
+  background-color: #cbd5e0; /* Light Slate */
 }
 
 .content {
@@ -77,17 +87,16 @@
   padding: 16px;
   border-radius: 0 0 5px 5px; /* Rounded bottom corners */
   transition: opacity 0.3s ease-in-out;
-  /* gap: 10px; */
 }
 
 /* Individual Content Items */
 .content-item {
-  background-color: #efecec; /* White background for content items */
+  background-color: #edf2f7; /* Soft Cool White */
   padding-left: 8px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   font-size: 1rem;
-  color: #aaa; /*Darker text color for readability */
+  color: #4a5568; /* Slate Grey */
   margin-bottom: 20px;
 }
 
@@ -105,28 +114,28 @@
 
 /* Set text color for Income */
 .income-text {
-  color: #4ecc5a !important;
+  color: #38b2ac !important; /* Teal */
 }
 
 /* Set text color for Expenses */
 .expenses-text {
-  color: red !important;
+  color: #f56565 !important; /* Coral Red */
 }
 
 .budget-content p {
-  color: #aaa; /* Lighter color for the placeholder text */
+  color: #4a5568; /* Slate Grey */
   font-size: 1rem;
   font-weight: 500;
 }
 
 /* Budget Content */
 .budget-item {
-  background-color: #efecec; /* White background for content items */
+  background-color: #edf2f7; /* Soft Cool White */
   padding-left: 8px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   font-size: 1rem;
-  color: #aaa; /*Darker text color for readability */
+  color: #4a5568; /* Slate Grey */
   margin-bottom: 20px;
 }
 
@@ -138,7 +147,7 @@
 
 .budget-item .amount-left-label {
   font-size: 0.9rem;
-  color: #898989; /* Black text for label */
+  color: #718096; /* Subtle Grey */
 }
 
 .budget-item .amount-value {
@@ -147,15 +156,14 @@
   padding-right: 5px;
 }
 
-
-/* Progress Bar  for categories card*/
+/* Progress Bar for categories card */
 .progress-bar {
   display: flex;
   width: 100%; /* Responsive to card width */
   height: 20px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f0f0f0;
+  background-color: #e2e8f0; /* Cool Grey */
   margin-bottom: 10px;
 }
 
@@ -164,7 +172,7 @@
   flex-grow: 1; /* Let segments take equal space */
   height: 100%;
   transition: width 0.5s ease-in-out;
-  border: 1px solid #f9fcfb; /* Adds subtle dividers */
+  border: 1px solid #edf2f7; /* Adds subtle dividers */
 }
 
 /* Round the first and last segment edges */
@@ -200,16 +208,18 @@
   height: 12px;
   border-radius: 50%;
   display: inline-block;
+  background-color: #38b2ac; /* Teal */
 }
 
 .category-name {
   font-size: 14px;
   font-weight: bold;
+  color: #4a5568; /* Slate Grey */
 }
 
 .percentage {
   font-size: 12px;
-  color: #666;
+  color: #718096; /* Subtle Grey */
 }
 
 /* Media Queries */
@@ -217,26 +227,6 @@
 @media (max-width: 1024px) {
   .card {
     flex: 1 1 calc(50% - 20px); /* Two cards per row */
-  }
-}
-
-/* Larger Progress Bar for Two Cards per Row */
-@media (min-width: 768px) {
-  .progress-bar {
-    height: 25px; /* Increase height for better visibility */
-  }
-}
-
-/* Even Larger Progress Bar for Three Cards per Row */
-@media (min-width: 1024px) {
-  .progress-bar {
-    height: 30px; /* Further increase height for large screens */
-  }
-}
-
-@media (min-width: 1200px) {
-  .progress-bar {
-    height: 35px; /* Increase height for large screens */
   }
 }
 
@@ -250,6 +240,10 @@
     max-width: 100%; /* Allow full width */
     padding: 15px; /* Reduce padding for smaller screens */
   }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  }
 }
 
 @media (max-width: 480px) {
@@ -258,6 +252,6 @@
   }
 
   .categories-grid {
-    grid-template-columns: 1fr; /* One category per row */
+    grid-template-columns: 1fr; /* One item per row */
   }
 }
