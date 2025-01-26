@@ -7,7 +7,7 @@
 }
 
 .dashboard-content {
-  background-color: #f9fafb;
+  background-color: #edf2f7; /* Soft Cool White */
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Position content at the top */
@@ -27,8 +27,8 @@
 
 /* Add Button Styling */
 .add-button {
-  background-color: #d9d9d9; /* Main color (Light Grey) */
-  color: #3f3e39;
+  background-color: #e2e8f0; /* Cool Grey */
+  color: #1a202c; /* Dark Navy */
   border: none;
   border-radius: 5px;
   padding: 8px 18px;
@@ -44,8 +44,8 @@
 }
 
 .add-button:hover {
-  background-color: #adebb3; /* green shade on hover */
-  color: #3f3e39; /* White text on hover */
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
 }
 
 .plus-icon {
@@ -57,9 +57,9 @@
   position: absolute; /* To ensure it appears above the button */
   top: 80%; /* Align the dropdown directly below the button */
   right: 3%;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Pure White */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border: 2px solid #d3d3d3;
+  border: 2px solid #cbd5e0; /* Light Slate */
   border-radius: 5px;
   width: 200px; /* Control the size of drop down */
   z-index: 9999; /* Ensure dropdown appears above other elements */
@@ -78,12 +78,12 @@
 }
 
 .add-dropdown li:hover {
-  background-color: #f0f0f0;
+  background-color: #e2e8f0; /* Cool Grey */
 }
 
 .add-dropdown ul li {
   padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Faint line using light gray with opacity */
+  border-bottom: 1px solid #cbd5e0; /* Light Slate */
 }
 
 .add-dropdown ul li:last-child {

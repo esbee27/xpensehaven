@@ -3,13 +3,12 @@
 
 /* Body background */
 .transaction-page {
-  background-color: #f9fafb;
+  background-color: #edf2f7; /* Soft Cool White */
   padding: 20px;
   margin-right: 25px;
   font-family: "Fredoka", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
-  /* overflow: visible; */
 }
 
 /* Header Section */
@@ -26,24 +25,24 @@
 }
 
 .transaction-form-container {
-  position: absolute; /* Position the form relative to the parent container */
-  top: 100%; /* Right below the button */
-  right: 3%; /* Aligns with the button */
-  max-width: 500px; /* Set a maximum width for the form */
+  position: absolute;
+  top: 100%;
+  right: 3%;
+  max-width: 500px;
   width: 350px;
   max-height: 100vh;
   padding: 20px;
-  min-height: 200px; /* Ensure enough space for buttons */
-  background-color: #fff;
+  min-height: 200px;
+  background-color: #fff; /* Default White */
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e0; /* Light Slate */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
-  z-index: 1000; /* Ensure it stays above other elements */
+  z-index: 1000;
   transition: height 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /*Ensures buttons stay inside */
-  flex-grow: 1; /* Allow content to grow and take available space */
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .time-periods {
@@ -57,7 +56,7 @@
   padding: 10px 20px;
   margin-left: 20px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #cbd5e0; /* Light Slate */
   cursor: pointer;
   font-size: 16px;
   font-family: "Fredoka", sans-serif;
@@ -65,14 +64,14 @@
 }
 
 .transaction-page .time-periods button.active {
-  background-color: white;
-  border: 1px solid black;
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
   font-weight: bold;
 }
 
 .transaction-page .add-transaction-btn {
-  background-color: #d9d9d9;
-  color: black;
+  background-color: #4a5568; /* Slate Grey */
+  color: #edf2f7; /* Soft Cool White */
   font-family: "Fredoka", sans-serif;
   padding: 10px 15px;
   border: none;
@@ -85,14 +84,13 @@
 }
 
 .transaction-page .add-transaction-btn:hover {
-  background-color: #adebb3;
+  background-color: #38b2ac; /* Teal */
 }
 
 /* Table Styling */
 .transaction-page .transaction-table table {
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
 }
 
 .transaction-page .transaction-table th,
@@ -102,94 +100,59 @@
 }
 
 .transaction-page .transaction-table th {
-  border-bottom: 2px solid #d9d9d9;
+  border-bottom: 2px solid #cbd5e0; /* Light Slate */
   font-size: 16px;
   font-weight: 600;
-  text-align: center; /*Ensures left alignment */
-  color: #000000;
+  text-align: center;
+  color: #1a202c; /* Dark Navy */
 }
 
 .transaction-page .transaction-table tr:not(:last-child) {
-  border-bottom: 1px solid #ddd;
-}
-
-.transaction-page .transaction-table th:nth-child(1) {
-  width: 20%; /* Adjust the percentage as needed to create even table headers */
-}
-.transaction-page .transaction-table th:nth-child(2) {
-  width: 15%;
-}
-.transaction-page .transaction-table th:nth-child(3) {
-  width: 18%;
-}
-.transaction-page .transaction-table th:nth-child(4) {
-  width: 12%;
-}
-
-.transaction-page .transaction-table th:nth-child(5) {
-  width: 15%;
-  text-align: center;
-}
-
-.transaction-page .transaction-table th:nth-child(6) {
-  width: 18%;
-}
-
-/* Add gap between rows */
-.transaction-page .transaction-table tr {
-  /* height: 50px; */
-  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #e2e8f0; /* Cool Grey */
 }
 
 .transaction-page .transaction-table td {
   font-size: 1rem;
-  color: #333;
+  color: #4a5568; /* Slate Grey */
 }
 
 /* Styling specific table columns */
-
-/* Category column */
 .transaction-page .transaction-table td:nth-child(3) {
   font-weight: bold;
-  /* padding-left: 30px; */
 }
 
-/* Amount column */
 .transaction-page .transaction-table td:nth-child(4) {
   font-weight: bold;
-  color: #333;
 }
 
-/* Date column */
 .transaction-page .transaction-table td:nth-child(5) {
   text-align: center;
   font-size: 0.9rem;
-  white-space: nowrap;
-  color: #777;
+  color: #4a5568; /* Slate Grey */
 }
 
-/* Action buttons styling */
 .transaction-page .transaction-table td button {
   margin-right: 10px;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #edf2f7; /* Soft Cool White */
+  color: #1a202c; /* Dark Navy */
   margin: 5px;
-  display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #cbd5e0; /* Light Slate */
   cursor: pointer;
   font-size: 14px;
 }
 
 .transaction-page .transaction-table td button:hover {
-  background-color: #d9d9d9;
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
 }
 
 .transaction-page .transaction-table td button:focus {
-  outline: 2px solid #adebb3;
+  outline: 2px solid #38b2ac; /* Teal */
 }
 
+/* Media Queries */
 @media (max-width: 1024px) {
   .transaction-page .transaction-header-container {
     flex-direction: column;
@@ -197,84 +160,11 @@
     margin-left: 10px;
     font-size: 1.2rem;
   }
-  .transaction-page .add-transaction-btn {
-    margin-top: 20px; /* Adds space above the button */
-    margin-left: 0; /* Keeps it aligned to the left */
-    width: auto; /* Keeps the button at its natural width */
-    display: block; /* Ensures consistent spacing behavior */
-  }
-  .transaction-page .transaction-table th,
-  .transaction-page .transaction-table td {
-    padding: 15px;
-    font-size: 14px;
-  }
-  .transaction-page .transaction-table td button {
-    margin: 5px 0;
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
   .transaction-page .transaction-header-container {
     margin-left: 5px;
     font-size: 1rem;
-  }
-  .transaction-page .time-periods button {
-    margin-left: 10px;
-    font-size: 14px;
-  }
-  .transaction-page .transaction-table th:nth-child(5),
-  .transaction-page .transaction-table td:nth-child(5) {
-    text-align: left;
-  }
-  .transaction-page .transaction-table {
-    font-size: 0.9rem;
-  }
-  .transaction-page .transaction-table th,
-  .transaction-page .transaction-table td {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .transaction-form-container {
-    left: 10px;
-    right: 10px;
-    max-width: calc(100% - 20px);
-  }
-  .transaction-page .transaction-table th,
-  .transaction-page .transaction-table td {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .transaction-page {
-    font-size: 1rem;
-  }
-  .transaction-page .transaction-header-container {
-    font-size: 0.9rem;
-  }
-  .transaction-page .transaction-table table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  .transaction-page .transaction-table th,
-  .transaction-page .transaction-table td {
-    display: block;
-    text-align: left;
-    padding: 10px 5px;
-  }
-  .transaction-page .transaction-table td button {
-    margin: 5px 5px 5px 0;
-    display: inline-block;
-    width: calc(100% - 10px);
-    margin: 5px auto;
-  }
-  .transaction-page .transaction-table td:nth-child(5) {
-    font-size: 0.8rem;
-    color: #555;
   }
 }

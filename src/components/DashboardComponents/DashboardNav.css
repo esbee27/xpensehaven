@@ -1,12 +1,14 @@
-/* src/components/DashboardNav.css */
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
-
+/* General Navbar Styling */
 .dashboard-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
-  border-bottom: 1px solid #ddd; /* Gives a subtle bottom border */
+  padding: 1rem 2rem;
+  background-color: #1a202c; /* Dark Navy */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
   font-family: "Fredoka", sans-serif;
 }
 
@@ -18,141 +20,107 @@
 
 .dash-nav a {
   text-decoration: none;
-  color: #3f3e39; /* grey text for links */
+  color: #edf2f7; /* Soft Cool White */
   font-size: 18px;
   font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .dash-nav li a.active {
-  background-color: #adebb3; /* Highlight the active link in mint green */
+  background-color: #81e6d9; /* Mint Teal */
   padding: 10px 18px;
   border-radius: 5px;
-  border: 1px solid #ddd7d7;
-  font-weight: bold; /*Make it bold for emphasis */
+  border: none;
+  color: #1a202c; /* Dark Navy */
+  font-weight: bold;
 }
 
+.dash-nav li a:hover {
+  background-color: #38b2ac; /* Teal */
+  color: #edf2f7; /* Soft Cool White */
+}
+
+/* Icon Styling */
 .icons {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
-  cursor: pointer;
-  padding-right: 20px; /* Add right padding to move icons inward */
-  margin-right: 15px;
+  display: flex; /* Ensures child elements are side-by-side */
+  align-items: center; /* Vertically aligns icons */
+  gap: 10px; /* Adjust spacing between the icons */
 }
 
 .icons svg {
+  color: #cbd5e0; /* Light Slate */
   width: 30px;
   height: 30px;
-  color: #d3d3d3; /* Color of the icons */
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.profile {
-  position: relative;
-  display: flex;
-  align-items: center;
+.icons svg:hover {
+  color: #81e6d9; /* Mint Teal */
 }
 
+/* Profile Section */
 .profile-menu {
   position: absolute;
-  top: 30px; /* Adjusts the vertical position of the menu */
-  right: 0; /* Aligns the menu to the right of the icon */
-  background-color: white;
-  border: 1px solid #ddd;
+  top: 40px;
+  right: 0;
+  background-color: #2d3748; /* Charcoal Blue */
+  border: 1px solid #cbd5e0; /* Light Slate */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  border-radius: 5px;
-  width: 180px;
-  z-index: 1000; /* Ensures menu appears on top */
+  border-radius: 8px;
+  width: 200px;
+  z-index: 1000;
+  color: #edf2f7; /* Soft Cool White */
   font-size: 14px;
 }
 
 .profile-menu p {
-  display: flex; /* Use flexbox to align icon and text */
-  align-items: center; /* Vertically align the items */
-  gap: 10px; /* Adds space between the icon and the text */
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 5px 0;
   cursor: pointer;
-  padding: 5px 0; /* Optional: Adds some padding to the left and right for spacing */
-}
-
-/* <p> that contains the profile icon and username */
-.profile-info {
-  display: flex; /* Make this <p> a flex container */
-  align-items: center; /* Vertically align the items (icon and text) */
-  gap: 10px; /* Add space between the icon and the text */
 }
 
 .profile-menu p:hover {
-  color: #3f3e39; /* Highlight text on hover */
+  color: #81e6d9; /* Mint Teal */
 }
 
 .profile-menu hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #cbd5e0; /* Light Slate */
   margin: 8px 0;
 }
 
-.settings-link {
-  text-decoration: none;
-}
-.dashboard-nav {
-  display: flex;
-  justify-content: space-between; /* Space out nav items */
-  align-items: center; /* Vertically center nav items */
-  padding: 1rem 2rem; /* Add some spacing around */
-  background-color: #fff; /* Background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  position: sticky; /* Stick to the top on scroll */
-  top: 0; /* Ensure it's at the very top */
-  z-index: 10; /* Ensure it stays above other elements */
+.profile-icon img {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.dashboard-nav .nav-item {
-  margin: 0 1rem; /* Add space between nav items */
-  font-size: 1rem; /* Ensure text is legible */
-  color: #333; /* Default text color */
-  text-decoration: none; /* Remove underline */
-}
-
-.dashboard-nav .nav-item:hover {
-  color: #007bff; /* Add hover effect */
-  text-decoration: underline; /* Optional: add underline on hover */
-}
-
-.dashboard-nav .logo {
-  height: 40px; /* Adjust logo size */
-  width: auto; /* Maintain aspect ratio */
-}
-
-.dashboard-nav .menu-toggle {
-  display: none; /* Hide for larger screens */
-}
 .dashboard-profile-pic {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  object-fit: cover;
 }
+
 .profile-pic-large {
-  width: 40px; /* Match the size you want */
+  width: 40px;
   height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .dashboard-nav {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
 
-  .dashboard-nav .menu-toggle {
-    display: block; /* Show toggle button for smaller screens */
-    font-size: 1.5rem; /* Make it large enough to tap */
-    cursor: pointer; /* Show pointer cursor */
+  .dash-nav {
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .dashboard-nav .nav-item {
-    margin: 0.5rem 0; /* Adjust spacing for vertical layout */
+  .dash-nav a {
+    font-size: 16px;
   }
 }

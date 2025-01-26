@@ -5,7 +5,6 @@
   font-family: "Fredoka", sans-serif;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   min-height: 100vh;
   margin: 0;
 }
@@ -13,12 +12,13 @@
 /* Header Section */
 .settings-header {
   display: flex;
+  color: #cbd5e0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #1a202c;
   padding: 5px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #cbd5e0;
 }
 
 .settings-header h2 {
@@ -38,10 +38,9 @@
 .settings-main {
   display: flex;
   width: 100%;
-  /* max-width: 1200px; */
-  background-color: #f9fafb;
-  height: calc(100vh - 60px); /* Take full height minus header height */
-  padding: 0 10px; /* Adds space on the sides */
+  background-color: #e2e8f0;
+  height: calc(100vh - 60px);
+  padding: 0 10px;
   overflow: hidden;
 }
 
@@ -63,35 +62,32 @@
   text-align: left;
 }
 
-/* When collapsed, hide divider and content area and reduce width */
 .settings-main.collapsed {
-  width: fit-content; /* Adjust the width to fit only the side panel */
-  transition: width 0.3s ease; /* Add smooth transition */
-  display: flex; /* Align everything to the left */
-  justify-content: flex-start; /* Align everything to the left */
-  /* width: auto;                 Allow width to adjust */
+  width: fit-content;
+  transition: width 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
 }
 
-/* Hide the divider and content area */
 .settings-main.collapsed .divider,
 .settings-main.collapsed .settings-content {
   display: none;
 }
 
 .side-panel button.active {
-  background-color: #adebb3;
-  color: #ffffff;
+  background-color: #38b2ac;
+  color: #edf2f7;
 }
 
 .side-panel button:hover {
-  background-color: #adebb3;
-  color: #ffffff;
+  background-color: #38b2ac;
+  color: #edf2f7;
 }
 
 /* Divider */
 .divider {
   width: 2px;
-  background-color: #b3b3b3; /* Dark color */
+  background-color: #4a5568;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -109,14 +105,14 @@
 }
 
 .settings-page button {
-  font-family: inherit; /* Ensures buttons inherit the Fredoka font */
+  font-family: inherit;
   margin: 16px;
   font-size: 16px;
 }
 
 .transaction-buttons {
   display: flex;
-  gap: 15px; /* Adds spacing between buttons */
+  gap: 15px;
   margin-top: 15px;
 }
 
@@ -126,32 +122,33 @@
 
 .link-bank-btn,
 .download-btn {
-  background-color: #adebb3;
-  color: black;
+  background-color: #38b2ac;
+  color: #edf2f7;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   gap: 15px;
-  margin-bottom: 15px; /* Added space between buttons */
+  margin-bottom: 15px;
 }
 
 .upload-btn {
-  background-color: #ffffff;
-  color: black;
+  background-color: #edf2f7;
+  color: #2d3748;
   padding: 10px 15px;
-  border: 1px solid grey;
+  border: 1px solid #4a5568;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 15px; /* Added space between buttons */
+  margin-bottom: 15px;
 }
 
 .underline {
   border: 0;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #cbd5e0;
   margin: 10px 0;
 }
-/*Profile settings*/
+
+/* Profile settings */
 .profile-content {
   max-width: 300px;
   margin: 0;
@@ -160,43 +157,45 @@
 }
 
 h3 {
-  /* text-align: center; */
   margin-bottom: 20px;
 }
 
 .profile-photo {
-  width: 100px; /* Adjust this value to your preferred size */
-  height: 100px; /* Keep the same value as width for a square shape */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image scales proportionally and doesn't distort */
-  border: 2px solid #ccc; /* Optional: add a border for aesthetics */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #cbd5e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .photo-circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #e0e0e0;
+  background-color: #e2e8f0;
   margin-bottom: 10px;
 }
 
 .change-photo-btn {
   padding: 8px 12px;
   font-size: 14px;
-  color: #3f3e39;
-  background-color: #ffffff;
-  border: 1px solid #3f3e39;
+  color: #4a5568;
+  background-color: #edf2f7;
+  border: 1px solid #4a5568;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .change-photo-btn:hover {
-  background-color: #adebb3;
+  background-color: #38b2ac;
+  color: #edf2f7;
 }
+
 .change-photo-btn:active {
-  background-color: #4ecc43;
+  background-color: #81e6d9;
 }
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -205,7 +204,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
-  color: #333;
+  color: #2d3748;
 }
 
 input[type="text"],
@@ -213,7 +212,7 @@ input[type="email"] {
   width: 100%;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e0;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -223,20 +222,22 @@ input[type="email"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  color: #3f3e39;
-  background-color: #ffffff;
-  border: 1px solid #3f3e39;
+  color: #4a5568;
+  background-color: #edf2f7;
+  border: 1px solid #4a5568;
   border-radius: 5px;
   cursor: pointer;
-  /* margin-top: 0 20px; */
 }
 
 .save-changes-btn:hover {
-  background-color: #adebb3;
+  background-color: #38b2ac;
+  color: #edf2f7;
 }
+
 .save-changes-btn:active {
-  background-color: #4ecc43;
+  background-color: #81e6d9;
 }
+
 .profile-photo-wrapper {
   display: flex;
   flex-direction: column;
@@ -248,13 +249,13 @@ input[type="email"] {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: #e2e8f0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  color: #888;
-  border: 2px dashed #ccc; /* Dashed border for placeholders */
+  color: #718096;
+  border: 2px dashed #cbd5e0;
 }
 
 .photo-input {

@@ -1,11 +1,11 @@
 .recent-transactions {
-  background: white;
-  padding: 16px 20px; /* Increased padding for a better look */
-  border: 1px solid rgba(0, 0, 0, 0.12); /* Softer border */
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Subtle shadow */
-  max-width: 90%; /* Less wide */
-  margin: auto; /* Center it */
+  background: #edf2f7; /* Soft Cool White */
+  padding: 16px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  max-width: 90%;
+  margin: auto;
   margin-top: 30px;
   padding-bottom: 15px;
 }
@@ -13,14 +13,14 @@
 .recent-transactions-header {
   display: flex;
   align-items: center;
-  gap: 15px; /* Adds space between the icon and text */
+  gap: 15px;
   font-size: 1.5rem;
-  margin-bottom: 18px; /* Adds space below the header */
+  margin-bottom: 18px;
 }
 
 .wallet-icon {
-  color: #4ecc5a; /* Green wallet icon */
-  font-size: 1.8rem; /* Adjust icon size */
+  color: #38b2ac; /* Teal */
+  font-size: 1.8rem;
 }
 
 .transaction-table table {
@@ -30,16 +30,16 @@
 
 .transaction-table th,
 .transaction-table td {
-  padding: 8px 12px; /* Increased padding for better spacing */
+  padding: 8px 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
-  font-size: 15px; /* Readable text size */
+  border-bottom: 1px solid #e2e8f0; /* Cool Grey */
+  font-size: 15px;
 }
 
 .transaction-table th {
   font-weight: 700;
-  font-size: 16px; /* Larger headers */
-  border-bottom: 2px solid #bbb; /* Even thicker border */
+  font-size: 16px;
+  border-bottom: 2px solid #cbd5e0; /* Light Slate */
 }
 
 .transaction-table tr:last-child td {
@@ -47,12 +47,12 @@
 }
 
 .type.income {
-  color: #4ecc5a;
+  color: #4ecc5a; /* Mint Teal */
   font-weight: bold;
 }
 
 .type.expense {
-  color: #ee3535;
+  color: #f56565; /* Coral Red */
   font-weight: bold;
 }
 
@@ -60,7 +60,7 @@
   display: block;
   margin-top: 14px;
   text-align: left;
-  color: #4ecc5a;
+  color: #38b2ac; /* Teal */
   font-weight: bold;
   text-decoration: none;
   font-size: 15px;
@@ -73,7 +73,7 @@
 .no-transactions {
   text-align: center;
   font-style: italic;
-  color: gray;
+  color: #a0aec0; /* Light Slate */
   padding: 12px 0;
   font-size: 18px;
 }

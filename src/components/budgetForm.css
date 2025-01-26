@@ -11,14 +11,14 @@
   margin-bottom: 15px;
   font-size: 1.5em;
   text-align: center;
-  color: #333;
+  color: #1a202c; /* Dark Navy */
 }
 
 .budget-form label {
   display: flex;
   flex-direction: column;
   font-size: 1em;
-  color: #555;
+  color: #4a5568; /* Slate Grey */
   padding: 10px;
 }
 
@@ -26,15 +26,15 @@
   font-family: "Fredoka", sans-serif;
   padding: 10px;
   font-size: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e0; /* Light Slate */
   border-radius: 4px;
   margin-top: 5px;
-  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
 .budget-form input:focus {
   outline: none;
-  border-color: #adebb3;
+  border-color: #81e6d9; /* Mint Teal */
   box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
@@ -53,28 +53,27 @@
 }
 
 .form-buttons button[type="submit"] {
-  background: #4ecc5a;
-  color: white;
+  background: #4a5568; /* Slate Grey */
+  color: #edf2f7; /* Soft Cool White */
 }
 
 .form-buttons button[type="submit"]:hover {
-  background: #adebb3;
-  color: #555;
+  background: #38b2ac; /* Teal */
+  color: #edf2f7; /* Soft Cool White */
 }
 
 .form-buttons .cancel-btn {
-  background: #d9d9d9;
-  color: #555;
+  background: #e2e8f0; /* Cool Grey */
+  color: #4a5568; /* Slate Grey */
 }
 
-.form-buttons .cancel-btn:hover{
-  background: #9c9898;
-  color: #ffffff;
+.form-buttons .cancel-btn:hover {
+  background: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
 }
-
 
 .error {
-  color: red;
+  color: #f56565; /* Coral Red */
   font-size: 0.9em;
   margin-top: 0.2em;
 }
