@@ -1,0 +1,50 @@
+.action-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.action-text {
+  font-size: 1.3rem;
+  background-color: #38b2ac; /* Teal */
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e0; /* Light Slate */
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+}
+
+.action-text:hover {
+  color: #ffffff;
+}
+
+.link-bank {
+  font-size: 1.3rem;
+  color: #4a5568; /* Slate Grey */
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.settings-link {
+  color: #3e3c39; /* Darker shade for the settings link */
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.settings-link:hover {
+  color: #1f1f1f; /* Slightly darker on hover */
+}
+
+.placeholder,
+.link-bank {
+  line-height: 1.5;
+}
+
+.link-bank {
+  margin-top: -5px;
+}

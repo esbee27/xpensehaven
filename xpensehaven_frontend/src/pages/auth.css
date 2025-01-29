@@ -1,0 +1,132 @@
+/* Container */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a202c; /* Soft Cool White */
+}
+
+/* Logo */
+.auth-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f56565; /* Coral Red */
+  margin-bottom: 10px;
+}
+.auth-logo span {
+  color: #38b2ac; /* Teal */
+}
+
+/* Title */
+.auth-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1a202c; /* Dark Navy */
+  padding-top: 50px;
+}
+
+/* Form */
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Input */
+.auth-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0; /* Light Slate */
+  border-radius: 5px;
+  background-color: #edf2f7; /* Soft Cool White */
+}
+
+.auth-input:focus {
+  border-color: #38b2ac; /* Teal */
+}
+
+/* Buttons */
+.auth-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-button.primary {
+  background-color: #38b2ac;
+  color: #edf2f7; /* Soft Cool White */
+}
+.auth-button.primary:hover {
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
+}
+
+.auth-button.google {
+  background-color: #38b2ac; /* Teal */
+  color: #1a202c; /* Dark Navy */
+  border: 1px solid #cbd5e0; /* Light Slate */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.auth-button.google:hover {
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
+}
+
+/* Google Icon */
+.google-icon {
+  height: 20px;
+  width: 20px;
+}
+
+/* Divider */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  color: #cbd5e0; /* Light Slate */
+}
+
+.auth-divider span {
+  flex: 1;
+  height: 1px;
+  background-color: #cbd5e0; /* Light Slate */
+}
+
+/* Footer */
+.auth-footer {
+  text-align: center;
+  color: #cbd5e0; /* Light Slate */
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #38b2ac; /* Teal */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper for centering forms with extra spacing */
+.auth-wrapper {
+  background-color: #2d3748; /* Soft Cool White */
+  border: 2px solid #cbd5e0; /* Light Slate */
+  padding: 20px;
+  max-width: 300px;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}

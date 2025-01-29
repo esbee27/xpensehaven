@@ -1,0 +1,130 @@
+/* Budget page styles */
+.budget-page {
+  padding: 20px;
+  margin-right: 25px;
+  background-color: #edf2f7; /* Soft Cool White */
+  position: relative;
+}
+
+/* Budget Actions */
+.budget-actions {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-budget {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin-left: 25px;
+  width: 30vw;
+  background: #edf2f7; /* Soft Cool White */
+  border: 1px solid #cbd5e0; /* Light Slate */
+  border-radius: 5px;
+  color: #4a5568; /* Slate Grey */
+}
+
+.search-budget:focus {
+  border-color: #38b2ac; /* Teal */
+}
+
+.add-budget {
+  background-color: #4a5568; /* Coral Red */
+  color: #edf2f7; /* Soft Cool White */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.add-budget:hover {
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
+}
+
+/* Budget Form */
+.budget-form-container {
+  position: absolute;
+  top: 35%;
+  right: 3%;
+  width: 350px;
+  max-width: 500px;
+  max-height: 100vh;
+  min-height: 200px;
+  background: #edf2f7; /* Soft Cool White */
+  padding: 20px;
+  border: 1px solid #cbd5e0; /* Light Slate */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Budget Table */
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: none;
+}
+
+.budget-table th {
+  padding-top: 20px;
+  border-bottom: 2px solid #cbd5e0; /* Light Slate */
+  color: #4a5568; /* Slate Grey */
+}
+
+.budget-table td {
+  border-bottom: 1px solid #e2e8f0; /* Cool Grey */
+  padding: 8px;
+  text-align: center;
+  color: #1a202c; /* Dark Navy */
+}
+
+.budget-table td button:focus {
+  outline: 1px solid #81e6d9; /* Mint Teal */
+}
+
+/* Buttons */
+.edit-btn,
+.delete-btn {
+  margin-right: 10px;
+  background-color: #4a5568; /* Slate Grey */
+  color: #edf2f7; /* Soft Cool White */
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #2d3748; /* Charcoal Blue */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn:hover {
+  background-color: #81e6d9; /* Mint Teal */
+  color: #1a202c; /* Dark Navy */
+}
+
+.delete-btn:hover {
+  background-color: #f56565; /* Coral Red */
+  color: #edf2f7; /* Soft Cool White */
+}
+
+/* Budget Status Styling */
+.budget-table td[style] {
+  font-weight: bold;
+}
+
+/* Status Colors */
+.budget-status-exceeded {
+  color: #f56565; /* Coral Red */
+}
+
+.budget-status-inactive {
+  color: #4a5568; /* Slate Grey */
+}
+
+.budget-status-active {
+  color: #38b2ac; /* Teal */
+}

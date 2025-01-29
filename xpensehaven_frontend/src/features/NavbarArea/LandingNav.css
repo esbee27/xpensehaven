@@ -1,0 +1,69 @@
+.navbar {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Keeps logo on the left, buttons on the right */
+  align-items: center; /* Vertically centers items */
+  padding: 8px 16px; /* Adds some padding around the navbar */
+  background-color: #2d3748; /* Sky blue background */
+  border-bottom: 2px solid #4169e1; /* Light royal blue border */
+}
+
+.nav-links {
+  display: flex; /* Make the list items inline */
+  align-items: center; /* Vertically align the items */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Removes default bullets for the list */
+  margin-left: auto; /* Pushes the nav-links to the right */
+  margin-right: 35px; /* Pushes the link away from the buttons */
+}
+
+.nav-link {
+  text-decoration: none; /* Removes the underline */
+  color: #fff; /* Royal blue text for links */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px; /* Add space around the link */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.nav-link:hover {
+  color: #1c1c1c; /* Dark grey for hover state */
+}
+
+.nav-buttons {
+  display: flex; /* Aligns buttons in a row */
+  align-items: center;
+  gap: 15px; /* Adds spacing between buttons */
+  margin-right: 20px; /* Moves buttons inward */
+}
+
+.nav-buttons button {
+  border: none; /* Removes default border */
+  font-weight: 500; /* Increases text thickness */
+  color: #ffffff; /* White text for buttons */
+  padding: 6px 18px; /* Adjust padding */
+  border: 1px solid #002366; /* Royal blue border */
+  border-radius: 7px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 18px; /* Button text size */
+  background-color: #002366; /* Royal blue background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth all relevant changes */
+}
+
+.nav-buttons button:first-child {
+  background-color: #4169e1; /* Light royal blue for the first button */
+}
+
+.nav-buttons button:last-child {
+  background-color: #002366; /* Royal blue for the last button */
+}
+
+.nav-buttons button:hover {
+  background-color: #4682b4; /* Steel blue for hover state */
+  color: #ffffff; /* White text remains */
+}
+
+.nav-buttons button:active {
+  background-color: #1c1c1c; /* Dark grey for active state */
+  color: #ffffff; /* White text remains */
+}
