@@ -1,0 +1,27 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap"); */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-container img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.logo-text {
+  /* font-family: "Fredoka", monospace; */
+  font-size: 20px;
+  font-weight: 600;
+  color: #edf2f7; /* Cool white for text */
+}
+
+.highlight {
+  /* font-family: "Fredoka", monospace; */
+  color: #38b2ac; /* Teal for the highlight */
+}

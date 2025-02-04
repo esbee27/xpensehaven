@@ -1,0 +1,120 @@
+/* AboutPage.css */
+/* @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400&display=swap");
+
+.about-page {
+  /* font-family: "Fredoka", sans-serif; */
+  background-color: #1a202c; /* Dark Navy for background */
+  color: #edf2f7; /* Soft white text for a contrast */
+}
+
+.about-header {
+  background-color: #2d3748; /* Charcoal Blue for header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.about-header .logo-text {
+  font-size: 22px;
+  color: #edf2f7; /* Soft white for logo text */
+}
+
+.about-content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 850px;
+  margin-top: 50px;
+  color: #edf2f7; /* Soft white text for the content */
+}
+
+.about-content .mission-text {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid #38b2ac; /* Teal border for the mission section */
+  border-radius: 10px;
+  color: #edf2f7; /* Darker text for better readability */
+  padding: 30px;
+}
+
+.faint-line {
+  border: 0;
+  border-top: 1px solid #cbd5e0; /* Light Slate gray for faint line */
+  width: 35%;
+  margin: 10px auto;
+}
+
+.about-content h3 {
+  font-size: 1.7rem;
+  background: linear-gradient(135deg, #d7c178, #4ecc5a, #3f3e39);
+  -webkit-background-clip: text;
+  color: #333;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s ease-in-out, transform 0.3s ease;
+  background-size: 200%;
+  text-align: center;
+}
+
+.about-content h3:hover {
+  background-position: right;
+  transform: scale(1.05);
+}
+
+.highlight-text {
+  color: #d7c178; /* Gold accent for highlighting */
+  font-weight: bolder;
+}
+
+.feynance {
+  color: #38b2ac; /* Teal for emphasis */
+  font-weight: bolder;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.first-paragraph {
+  padding-top: 25px;
+}
+
+.second-paragraph {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-page .cta-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 20px 10px;
+    font-size: 1rem;
+  }
+}
+
+.about-footer {
+  background-color: #2d3748; /* Charcoal Blue footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #cbd5e0; /* Light slate gray footer text */
+}
+
+.about-footer .logo-text {
+  font-size: 22px;
+}

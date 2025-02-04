@@ -1,0 +1,66 @@
+.profile-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 400px;
+  align-items: stretch;
+}
+
+.profile-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #cbd5e0; /* Light Slate */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-placeholder {
+  text-align: center;
+  color: #a0aec0; /* Light Slate for text */
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.change-photo-btn {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #1a202c; /* Dark Navy */
+  background-color: #38b2ac; /* Teal */
+  text-decoration: none;
+  margin: 10px auto 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.profile-input {
+  padding: 8px;
+  border: 1px solid #cbd5e0; /* Light Slate */
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.save-changes-btn {
+  padding: 10px;
+  background-color: #38b2ac; /* Coral Red */
+  color: #1a202c; /* Soft Cool White */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  align-self: stretch;
+}
